@@ -1,0 +1,112 @@
+body{
+    display: grid;
+    height: 100vh;
+    margin: 0 auto;
+}
+main{
+    margin: 5% auto;
+    display: grid;
+    height: 100px;
+    width: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "answer answer answer   answer"
+            "ac     neg    back     divide"
+            "seven  eight   nine    multi"
+            "four   five    six     minus"
+            "one    two     three   addition"
+            "zero0  zero0   point   equals";
+
+}
+div{
+    display: grid;
+    height: 70px;
+    width: 70px;
+    border: black solid 2px;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+#answer{
+    grid-area: answer;
+    background-color: rgb(153,153,153);
+    width: 232px;
+    text-align: right;
+    padding: 1em;
+    font-size: 30px;
+    display: grid;
+    height: 45px;
+    color: white;
+    letter-spacing: 1mm;
+    line-height: 1em;
+}
+#ac,#neg,#back{
+    background-color: rgb(214,214,214)
+}
+#ac{
+    grid-area: ac;
+}
+#neg{
+    grid-area: neg;
+}
+#back{
+    grid-area: back
+}
+#divide,#multi,#minus,#addition{
+    background-color: rgb(233,151,72);
+}
+#divide{
+    grid-area: divide;
+}
+#multi{
+    grid-area: multi;
+}
+#minus{
+    grid-area: minus;
+}
+#addition{
+    grid-area: addition;
+}
+#equals{
+    grid-area: equals;
+}
+.numbers{
+    background-color: rgb(224,224,224);
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#seven{
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+#nine{
+    grid-area: nine;
+}
+#zero{
+    grid-area: zero0;
+    width: 150px;
+}
+#decimal{
+    grid-area: point; 
+}
